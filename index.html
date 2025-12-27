@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>SkibxVN Tải Trực Tiếp</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: radial-gradient(circle at top, #0f2027, #000);
+    color: #fff;
+    height: 100vh;
+}
+
+/* MAIN */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    color: #00ff99;
+    text-shadow: 0 0 16px rgba(0,255,153,0.8);
+    margin-bottom: 15px;
+}
+
+.banner {
+    width: 260px;
+    border-radius: 14px;
+    box-shadow: 0 0 18px rgba(0,255,153,0.5);
+    margin-bottom: 18px;
+}
+
+.box {
+    width: 280px;
+    background: rgba(0,0,0,0.55);
+    border: 1px solid rgba(0,255,153,0.5);
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 0 8px rgba(0,255,153,0.3);
+    margin-bottom: 18px;
+}
+
+.box h3 {
+    color: #00ff99;
+    margin: 0 0 10px;
+}
+
+.box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.box li {
+    margin: 6px 0;
+    font-size: 0.95rem;
+}
+
+.btn-group {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn {
+    width: 100%;
+    padding: 14px 0;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    background: linear-gradient(135deg, #00ff99, #00ccff);
+    color: #000;
+    box-shadow: 0 0 18px rgba(0,255,153,0.75);
+    transition: 0.25s;
+}
+
+.btn.support {
+    background: linear-gradient(135deg, #00ccff, #7affff);
+    box-shadow: 0 0 16px rgba(0,204,255,0.7);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* ===== MODAL ===== */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.88);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.modal-box {
+    background: #050505;
+    padding: 28px 32px 32px;
+    border-radius: 16px;
+    box-shadow: 0 0 28px rgba(0,255,153,0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+/* AVATAR XOAY + TRÒN */
+.modal-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    box-shadow: 0 0 18px rgba(0,255,153,0.6);
+    animation: spin 6s linear infinite;
+}
+
+.modal-box h2 {
+    color: #00ff99;
+    margin: 4px 0 0;
+}
+
+.ok-btn {
+    width: 160px;
+    padding: 12px 0;
+    border-radius: 12px;
+    border: none;
+    background: #00ff99;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 0 14px rgba(0,255,153,0.8);
+}
+
+/* ANIMATION */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+</style>
+</head>
+
+<body>
+
+<!-- AUDIO – PHÁT LIÊN TỤC -->
+<audio id="bgm" preload="auto" playsinline loop>
+    <source src="https://raw.githubusercontent.com/darkteam17/share/main/henhonhungkoyeu.mp3" type="audio/mpeg">
+</audio>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+    <div class="modal-box">
+        <img class="modal-img"
+             src="https://sf-static.upanhlaylink.com/img/image_2025122712baae4ffc586baa6dacbac94b5c1b52.jpg">
+        <h2>Dowload Hack</h2>
+        <p>Hãy Ấn Support Nếu Gặp Lỗi</p>
+        <button class="ok-btn" id="okBtn">OK</button>
+    </div>
+</div>
+
+<div class="container">
+    <h1>SkibxVN</h1>
+
+    <img class="banner"
+         src="https://sf-static.upanhlaylink.com/img/image_2025122712baae4ffc586baa6dacbac94b5c1b52.jpg">
+
+    <div class="box">
+        <h3>⚙️ Chức năng</h3>
+        <ul>
+            <li>• Client SkibxVN</li>
+            <li>• Antiban</li>
+            <li>• No key</li>
+            <li>• Siêu Mượt</li>
+            <li>• Fix Delay Menu</li>
+        </ul>
+    </div>
+
+    <div class="btn-group">
+        <a class="btn support" href="https://t.me/obi74z" target="_blank">
+            💬 SUPPORT
+        </a>
+        <a class="btn" href="https://link4m.com/UpXA5W" target="_blank">
+            ⬇️ TẢI HACK
+        </a>
+    </div>
+</div>
+
+<script>
+const audio = document.getElementById("bgm");
+const modal = document.getElementById("modal");
+const okBtn = document.getElementById("okBtn");
+
+okBtn.addEventListener("click", () => {
+    audio.muted = false;
+    audio.volume = 0.8;
+
+    audio.play().then(() => {
+        modal.style.display = "none";
+    }).catch(() => {
+        audio.muted = true;
+        audio.play().then(() => {
+            audio.muted = false;
+            modal.style.display = "none";
+        });
+    });
+});
+</script>
+
+</body>
+</html>
